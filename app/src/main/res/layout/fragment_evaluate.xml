@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.EvaluateFragment">
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/all_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/dp_4"
+        android:text="全部评价(0)"
+        android:textColor="@color/qmui_config_color_white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/good_evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:qmui_backgroundColor="@color/colorPrimaryLight"
+        app:qmui_borderWidth="0dp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/good_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/dp_4"
+        android:text="好评(0)"
+        android:textColor="@color/text_gray3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/all_evaluate"
+        app:layout_constraintEnd_toStartOf="@+id/middle_evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/all_evaluate"
+        app:layout_constraintTop_toTopOf="@+id/all_evaluate"
+        app:qmui_backgroundColor="@color/stroke_recycler_divider_color"
+        app:qmui_borderWidth="0dp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/middle_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/dp_4"
+        android:text="中评(0)"
+        android:textColor="@color/text_gray3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/good_evaluate"
+        app:layout_constraintEnd_toStartOf="@+id/bad_evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/good_evaluate"
+        app:layout_constraintTop_toTopOf="@+id/good_evaluate"
+        app:qmui_backgroundColor="@color/stroke_recycler_divider_color"
+        app:qmui_borderWidth="0dp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/bad_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/dp_4"
+        android:text="差评(0)"
+        android:textColor="@color/text_gray3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/middle_evaluate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/middle_evaluate"
+        app:layout_constraintTop_toTopOf="@+id/middle_evaluate"
+        app:qmui_backgroundColor="@color/stroke_recycler_divider_color"
+        app:qmui_borderWidth="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:src="@color/stroke_recycler_divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_evaluate" />
+
+    <com.qmuiteam.qmui.widget.QMUIViewPager
+        android:id="@+id/viewPage_evaluate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+</android.support.constraint.ConstraintLayout>

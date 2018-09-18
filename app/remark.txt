@@ -1,0 +1,31 @@
+1.作文批改使用的接口查询出来的数据名字不一样，作文批改查出来的产品id为：productId，而题库和课件查出来的是id，当时用到时使用下面的方法处理：
+TextUtils.isEmpty(productModel.getProductId()) ? productModel.getId() : productModel.getProductId()
+2.作文批改产品查询的接口和题库课件使用的不是同一个接口，所以数据格式不一样，详情使用的也不是同一个接口
+3.弹窗：
+    private void showConfirmDialog(final int position) {
+        NiceDialog.init()
+                .setLayoutId(R.layout.confirm_layout)
+                .setConvertListener(new ViewConvertListener() {
+                    @Override
+                    protected void convertView(ViewHolder viewHolder, final BaseNiceDialog baseNiceDialog) {
+                        viewHolder.setText(R.id.tv_title, "提示");
+                        viewHolder.setText(R.id.tv_message, "删除地址");
+                        viewHolder.setOnClickListener(R.id.tv_confirm, new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                getP().deleteAddress(addressBeanList.get(position).getId());
+                                baseNiceDialog.dismiss();
+                            }
+                        });
+                        viewHolder.setOnClickListener(R.id.tv_cancel, new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                baseNiceDialog.dismiss();
+                            }
+                        });
+                    }
+                })
+                .setWidth(300)
+                .setHeight(150)
+                .show(getSupportFragmentManager());
+    }

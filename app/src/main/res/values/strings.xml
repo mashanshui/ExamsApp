@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">青阳MPAcc</string>
+    <string name="do_homework">做题</string>
+    <string name="take_lessons">听课</string>
+    <string name="personal_center">个人中心</string>
+    <string name="modify_homework">改作文</string>
+    <string name="online_product">线上产品</string>
+
+    <string name="personal_data">个人资料</string>
+    <string name="purse">我的钱包</string>
+    <string name="message">我的消息</string>
+    <string name="learning_statistics">学习统计</string>
+    <string name="advice">投诉建议</string>
+    <string name="achievement">我的成就</string>
+
+    <string name="start">开始</string>
+    <string name="pause">暂停</string>
+    <string name="delete">删除</string>
+    <string name="tasks_manager_demo_status_loading">状态: 加载中...</string>
+    <string name="tasks_manager_demo_status_pending">状态: 队列中</string>
+    <string name="tasks_manager_demo_status_started">状态: 开始下载</string>
+    <string name="tasks_manager_demo_status_connected">状态: 已连接上</string>
+    <string name="tasks_manager_demo_status_progress">状态: 下载中...</string>
+    <string name="tasks_manager_demo_status_downloading" formatted="false">状态: 正在下载 %d</string>
+    <string name="tasks_manager_demo_status_error">状态: 出错</string>
+    <string name="tasks_manager_demo_status_paused">状态: 暂停</string>
+    <string name="tasks_manager_demo_status_completed">状态: 下载完成</string>
+    <string name="tasks_manager_demo_status_not_downloaded">状态: 未下载</string>
+    <string name="change_password">密码修改</string>
+    <string name="pay_password_setting">支付密码设置</string>
+    <string name="address_manager">地址管理</string>
+    <string name="about">关于</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

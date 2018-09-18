@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="button_height">45dp</dimen>
+<dimen name="superTextView_height">50dp</dimen>
+<dimen name="image_recycle_list_height">60dp</dimen>
+<dimen name="image_recycle_list_width">60dp</dimen>
+</resources>

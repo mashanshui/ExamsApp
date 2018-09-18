@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_page"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/app_title" />
+
+    <com.shenhesoft.examsapp.util.view.MyEditText
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_gray_corner"
+        android:drawableLeft="@drawable/edt_phone_icon"
+        android:drawablePadding="10dp"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/login_edt_text_color"
+        android:textColorHint="@color/login_edt_hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.shenhesoft.examsapp.util.view.MyEditText
+        android:id="@+id/et_account"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gray_corner"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawableLeft="@drawable/edt_person_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/login_edt_text_color"
+        android:textColorHint="@color/login_edt_hint_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/et_phone"
+        app:layout_constraintStart_toStartOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gray_corner"
+        android:drawableLeft="@drawable/edt_lock_close_icon"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/login_edt_text_color"
+        android:textColorHint="@color/login_edt_hint_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/et_account"
+        app:layout_constraintStart_toStartOf="@+id/et_account"
+        app:layout_constraintTop_toBottomOf="@+id/et_account" />
+
+    <com.shenhesoft.examsapp.util.view.MyEditText
+        android:id="@+id/et_reply_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gray_corner"
+        android:drawableLeft="@drawable/edt_lock_open_icon"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/login_edt_text_color"
+        android:textColorHint="@color/login_edt_hint_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <com.shenhesoft.examsapp.util.view.VerifyEditText
+        android:id="@+id/et_verify_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gray_corner"
+        android:ems="10"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/login_edt_text_color"
+        android:textColorHint="@color/login_edt_hint_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/et_reply_password"
+        app:layout_constraintStart_toStartOf="@+id/et_reply_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_reply_password" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:text="注册"
+        android:textColor="@color/login_btn_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/et_verify_code"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_verify_code"
+        app:layout_constraintTop_toBottomOf="@+id/cb_agree_agreement" />
+
+    <com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView
+        android:id="@+id/tv_register_agreement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/login_edt_text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_agree_agreement"
+        app:layout_constraintStart_toEndOf="@+id/cb_agree_agreement"
+        app:layout_constraintTop_toTopOf="@+id/cb_agree_agreement" />
+
+    <com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView
+        android:id="@+id/tv_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/login_edt_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_register" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <CheckBox
+        android:button="@drawable/agreement_check_bg"
+        android:id="@+id/cb_agree_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/et_verify_code"
+        app:layout_constraintTop_toBottomOf="@+id/et_verify_code" />
+
+</android.support.constraint.ConstraintLayout>

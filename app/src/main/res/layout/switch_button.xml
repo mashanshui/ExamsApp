@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.allen.library.SuperTextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:stv="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--stv:sRightTextString="护眼模式"-->
+    <!--stv:sRightViewType="switchBtn"-->
+    <!--stv:sSwitchIsChecked="false"-->
+    <!--stv:sSwitchMinWidth="40dp"-->
+    <!--stv:sThumbResource="@drawable/thumb"-->
+    <!--stv:sTrackResource="@drawable/track" />-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/ll_switch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="护眼模式"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:id="@+id/sc_eye_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:minWidth="40dp"
+        android:maxWidth="40dp"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track" />
+</LinearLayout>
+

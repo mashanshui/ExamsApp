@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/star_check_bg"
+        android:text="收藏"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_operate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_operate" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:visibility="visible"
+        android:id="@+id/btn_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:text="统计成绩"
+        android:textColor="@color/qmui_config_color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:qmui_backgroundColor="@color/colorPrimary"
+        app:qmui_borderWidth="0dp"
+        app:qmui_isRadiusAdjustBounds="true" />
+
+    <include
+        layout="@layout/include_back_next_question"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_collect"
+        app:layout_constraintStart_toEndOf="@+id/cb_collect"
+        app:layout_constraintTop_toTopOf="@+id/cb_collect"
+        app:srcCompat="@drawable/do_subject_schedule" />
+
+    <TextView
+        android:id="@+id/tv_done_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_total_question"
+        app:layout_constraintStart_toEndOf="@+id/iv_total_question"
+        app:layout_constraintTop_toTopOf="@+id/iv_total_question" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_done_subject"
+        app:layout_constraintStart_toEndOf="@+id/tv_done_subject"
+        app:layout_constraintTop_toTopOf="@+id/tv_done_subject"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_total_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+</android.support.constraint.ConstraintLayout>

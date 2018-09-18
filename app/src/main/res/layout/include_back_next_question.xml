@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_back_next_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_back_subject"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="上一题"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_next_subject"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next_subject"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_next_subject"
+        app:layout_constraintVertical_bias="0.0"
+        app:sCornersBottomLeftRadius="20dp"
+        app:sCornersTopLeftRadius="20dp"
+        app:sSelectorNormalColor="@color/colorPrimary"
+        app:sSelectorPressedColor="@color/colorPrimaryDark"
+        app:sUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_next_subject"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="下一题"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_subject"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sCornersBottomRightRadius="20dp"
+        app:sCornersTopRightRadius="20dp"
+        app:sSelectorNormalColor="@color/colorPrimary"
+        app:sSelectorPressedColor="@color/colorPrimaryDark"
+        app:sUseSelector="true" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next_subject"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/white" />
+</android.support.constraint.ConstraintLayout>

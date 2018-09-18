@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="topbar_right_change_button" type="id"/>
+    <item name="topbar_right_change_button2" type="id"/>
+    <item name="topbar_right_change_text" type="id"/>
+    <item name="topbar_left_change_button" type="id"/>
+    <item name="topbar_right_switch_button" type="id"/>
+
+    <item name="qmui_arch_swipe_layout_in_back" type="id"/>
+
+    <item name="xstatusbar_fake_status_bar_view" type="id" />
+    <item name="xstatusbar_translucent_view" type="id" />
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_do_homework"
+        android:icon="@drawable/do_homework"
+        android:title="@string/do_homework" />
+
+    <item
+        android:id="@+id/menu_item_take_lessons"
+        android:icon="@drawable/take_lessons"
+        android:title="@string/take_lessons" />
+
+    <item
+        android:id="@+id/menu_item_personal_center"
+        android:icon="@drawable/personal_center"
+        android:title="@string/personal_center" />
+
+    <item
+        android:id="@+id/menu_item_modify_homework"
+        android:icon="@drawable/modify_homework"
+        android:title="@string/modify_homework" />
+
+    <item
+        android:id="@+id/menu_item_online_product"
+        android:icon="@drawable/online_product"
+        android:title="@string/online_product" />
+
+</menu>

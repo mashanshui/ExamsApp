@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="colorPrimary">#00aeff</color>
+    <color name="colorPrimaryDark">#009DFF</color>
+    <color name="colorPrimaryLight">#94DCFE</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="stroke_recycler_divider_color">#f6f6f6</color>
+
+    <color name="text_gray1">#333333</color>
+    <color name="text_gray2">#666666</color>
+    <color name="text_gray3">#999999</color>
+    <color name="light_text_color">#10B1FF</color>
+    <color name="night_clock_background">#EFD2AA</color>
+    <color name="text_money">#a3a3a3</color>
+
+    <color name="login_edt_hint_text_color">#7990A8</color>
+    <color name="login_edt_text_color">#DCEAFB</color>
+    <color name="login_btn_text_color">#DCEAFB</color>
+    <color name="bg">#F0F0F0</color>
+    <color name="status_bar_color">#FAFAFA</color>
+    <color name="recycler_light_driver">#EAEAEA</color>
+
+    <color name="bg_popup_color">#80666666</color>
+</resources>
